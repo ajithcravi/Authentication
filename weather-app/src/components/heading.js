@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 
-Heading = () => (
+const Heading = () => (
   <div>
-    <h1>This is the heading component</h1>
+    <h1>Hello Ajith</h1>
   </div>
 );
-
 export default Heading;
