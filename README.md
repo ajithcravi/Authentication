@@ -19,4 +19,4 @@ Follow steps below to download and run this project in local machine
 
 1.Open the index.js file from the src folder within the project folder and type 'npm start' in the terminal to start the application
 
-![Home Screen](images/Home.png)
+![Home Screen](images/Home Screen.png)
