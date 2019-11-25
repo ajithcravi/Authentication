@@ -17,15 +17,15 @@ const Result = props => {
               <div className="card-body card-body--margin">
                 <h5 className="card-title">
                   <b>
-                    {props.result.city},{props.result.stateName},
+                    {props.result.city}, {props.result.stateName},
                     {props.result.country}
                   </b>
                 </h5>
                 <p className="card-text">
-                  Temperature: <b>{props.result.temperature}</b>
+                  Temperature: <b>{props.result.temperature}&#176;F</b>
                 </p>
                 <p className="card-text">
-                  Humidity: <b>{props.result.humidity}</b>
+                  Humidity: <b>{props.result.humidity}%</b>
                 </p>
                 <p className="card-text">
                   Weather: <b>{props.result.description}</b>
