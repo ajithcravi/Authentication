@@ -1,9 +1,9 @@
 import React from "react";
 
-const Form = () => {
+const Form = props => {
   return (
     <div>
-      <form>
+      <form onSubmit={props.getResult}>
         <div className="form-group">
           <label for="location">Location</label>
           <input
