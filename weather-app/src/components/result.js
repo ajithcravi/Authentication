@@ -3,7 +3,7 @@ import React from "react";
 const Result = props => {
   return (
     <div>
-      {props.displayTrigger && (
+      {props.result.displayResult && (
         <div className="card mb-3 resultCard">
           <div className="row no-gutters">
             <div className="col-md-4">
