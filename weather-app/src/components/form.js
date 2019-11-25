@@ -2,45 +2,26 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div className="card card--width-reduced shadow p-3 mb-5 bg-white rounded">
+    <div className="card card--width-reduced shadow-lg p-3 mb-5 bg-white rounded">
+      <h1>Weathy</h1>
+      <h5>The weather app</h5>
       <form>
         <div className="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+          <label for="location">Location</label>
           <input
-            type="email"
+            name="location"
+            type="text"
             className="form-control"
-            id="exampleInputEmail1"
+            id="location"
             aria-describedby="emailHelp"
-            placeholder="Enter email"
-          />
-          <small id="emailHelp" className="form-text text-muted">
-            We'll never share your email with anyone else.
-          </small>
-        </div>
-        <div className="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input
-            type="password"
-            className="form-control"
-            id="exampleInputPassword1"
-            placeholder="Password"
+            placeholder="e.g. Chennai"
           />
         </div>
-        <div className="form-group form-check">
-          <input
-            type="checkbox"
-            className="form-check-input"
-            id="exampleCheck1"
-          />
-          <label className="form-check-label" for="exampleCheck1">
-            Check me out
-          </label>
-        </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn submitButton">
           Submit
         </button>
       </form>
-      <img src="..." className="card-img-top" alt="..." />
+      {/* <img src="..." className="card-img-top" alt="..." /> */}
     </div>
   );
 };
