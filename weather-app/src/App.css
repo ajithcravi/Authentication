@@ -34,7 +34,7 @@ body {
 .resultCard {
   border-radius: 2em;
   position: relative;
-  margin: 2em;
+  margin: 1em;
 }
 
 .resultCard im {
@@ -42,5 +42,15 @@ body {
 }
 
 select {
+  border-radius: 2em !important;
   margin-top: 2em;
+}
+
+.card-img--corner-round {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+
+.card-body--margin {
+  margin-top: 5em !important;
 }

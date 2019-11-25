@@ -29,16 +29,11 @@ class App extends React.Component {
       `https://restcountries.eu/rest/v2/name/${country}?fullText=true`
     );
     const countryData = await fetchCountry.json();
-    const countryCode = countryData[0].alpha3Code;
-    console.log(countryData);
 
     const fetchWeather = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city},${countryCode}&units=imperial&appid=${key.weather}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${key.weather}`
     );
     const weatherData = await fetchWeather.json();
-    console.log();
-
-    console.log(weatherData);
 
     this.setState({
       country: weatherData.sys.country,
@@ -47,7 +42,7 @@ class App extends React.Component {
       temperature: weatherData.main.temp,
       humidity: weatherData.main.humidity,
       description: weatherData.weather[0].description,
-      image: countryData[0].flag,
+      image: `http://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`,
 
       displayResult: true
     });
