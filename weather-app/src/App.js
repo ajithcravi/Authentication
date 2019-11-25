@@ -13,6 +13,7 @@ class App extends React.Component {
     city: undefined,
     temperature: undefined,
     humidity: undefined,
+    description: undefined,
     image: undefined,
 
     displayResult: false
@@ -24,12 +25,12 @@ class App extends React.Component {
     const stateName = event.target.elements.state.value;
     const city = event.target.elements.city.value;
 
-    const fetchCountryCode = await fetch(
+    const fetchCountry = await fetch(
       `https://restcountries.eu/rest/v2/name/${country}?fullText=true`
     );
-    const countryData = await fetchCountryCode.json();
+    const countryData = await fetchCountry.json();
     const countryCode = countryData[0].alpha3Code;
-    console.log(countryCode);
+    console.log(countryData);
 
     const fetchWeather = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city},${countryCode}&units=imperial&appid=${key.weather}`
@@ -40,6 +41,14 @@ class App extends React.Component {
     console.log(weatherData);
 
     this.setState({
+      country: weatherData.sys.country,
+      stateName: stateName,
+      city: weatherData.name,
+      temperature: weatherData.main.temp,
+      humidity: weatherData.main.humidity,
+      description: weatherData.weather[0].description,
+      image: countryData[0].flag,
+
       displayResult: true
     });
   };
