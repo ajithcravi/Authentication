@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Heading from "./components/heading";
 import Form from "./components/form";
 import Result from "./components/result";

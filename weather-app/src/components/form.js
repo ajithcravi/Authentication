@@ -5,15 +5,19 @@ const Form = props => {
     <div>
       <form onSubmit={props.getResult}>
         <div className="form-group">
-          <label for="location">Location</label>
-          <input
-            name="location"
-            type="text"
-            className="form-control inputBox--border-round"
-            id="location"
-            aria-describedby="emailHelp"
-            placeholder="e.g. Chennai"
-          />
+          <select
+            name="country"
+            className="countries custom-select"
+            id="countryId"
+          >
+            <option value="">Select Country</option>
+          </select>
+          <select name="state" className="states custom-select" id="stateId">
+            <option value="">Select State</option>
+          </select>
+          <select name="city" className="cities custom-select" id="cityId">
+            <option value="">Select City</option>
+          </select>
         </div>
         <button type="submit" className="btn submitButton">
           Submit
