@@ -20,3 +20,28 @@ Follow steps below to download and run this project in local machine
 1.Open the index.js file from the src folder within the project folder and type 'npm start' in the terminal to start the application
 
 ![Home Screen](images/HomeScreen.png)
+
+
+2. Select country from the firstinput fiels.
+
+![Country](images/Country.png)
+
+3. Select state from the firstinput fiels.
+
+![State](images/State.png)
+
+4. Select city from the firstinput fiels.
+
+![City](images/City.png)
+
+5. Submit the form.
+
+![Submit](images/HomeScreen.png)
+
+6. Result will be displayed at the bottom
+
+![Result](images/Result.png)
+
+## Author
+
+[**Ajith C Ravi**](https://github.com/ajithcravi)
