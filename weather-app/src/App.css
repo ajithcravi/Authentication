@@ -1,20 +1,37 @@
 body {
   background-color: #e0e0e0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .card--width-reduced {
   border: none;
   margin: 5em;
   background-color: #ffeb3b !important;
+  border-radius: 2em !important;
 }
 
 .submitButton {
   background-color: #9e9e9e;
   color: white;
   transition: 0.3s;
+  border-radius: 2em;
 }
 
 .submitButton:hover {
   background-color: #757575;
   color: white;
+}
+
+.inputBox--border-round {
+  border-radius: 2em;
+}
+
+.resultCard {
+  border-radius: 2em;
+  position: relative;
+  margin: 2em;
+}
+
+.resultCard im {
+  border-radius: 2em;
 }
